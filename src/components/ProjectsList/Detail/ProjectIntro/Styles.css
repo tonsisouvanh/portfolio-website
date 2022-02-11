@@ -1,0 +1,76 @@
+.product-intro-container {
+  width: 100%;
+  margin-bottom: 8em;
+}
+
+.product-intro-container .product-name-container .name {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.product-intro-container .product-name-container .description {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.product-intro-container .product-name-container .visit-btn {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border: none;
+  padding: 10px 44px;
+  font-size: 36px;
+  width: 159.35px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.product-intro-container .product-name-container .visit-btn::before {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  -webkit-transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  content: "";
+  width: 159.35px;
+  height: 40px;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.product-intro-container .product-name-container .visit-btn.rounded {
+  border-radius: 50px;
+}
+
+.product-intro-container .product-name-container .visit-btn.rounded .visit-text {
+  color: #00b0ff;
+  mix-blend-mode: difference;
+  text-decoration: none;
+  font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.product-intro-container .product-name-container .visit-btn.rounded::before {
+  border-radius: 50px;
+  width: 25%;
+  background: #fe4a49;
+}
+
+.product-intro-container .product-name-container .visit-btn.rounded:hover::before {
+  background: #00b0ff;
+  width: 100%;
+  color: #ffffff;
+}
+/*# sourceMappingURL=Styles.css.map */

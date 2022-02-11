@@ -1,0 +1,19 @@
+@import "../../Variable";
+
+.project-list-container {
+  width: 100%;
+  min-height: calc(100vh - #{$navbar-vh});
+  background-color: $black;
+  font-family: $ubuntu;
+  color: $gray;
+  @include flexCol(start, center);
+  padding: 3rem 5rem;
+  h1 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+}

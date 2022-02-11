@@ -1,0 +1,51 @@
+.icon-container {
+  position: fixed;
+  right: 0;
+  top: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  width: 3.5rem;
+  height: 15rem;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  opacity: 0;
+  -webkit-animation: appear-in 1.5s ease 2s forwards;
+          animation: appear-in 1.5s ease 2s forwards;
+}
+
+.icon-container img {
+  cursor: pointer;
+  width: 2.2rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.icon-container img:hover {
+  width: 2.6rem;
+}
+
+@-webkit-keyframes appear-in {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear-in {
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=Styles.css.map */

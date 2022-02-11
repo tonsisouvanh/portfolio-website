@@ -1,0 +1,61 @@
+[
+    {
+        "id": "T01",
+        "name": "Clothing Store",
+        "type": "E-commerce",
+        "tools": [
+            "HTML",
+            "CSS",
+            "REACT",
+            "SASS"
+        ],
+        "images": [
+            "/images/stars_main.png",
+            "/images/stars_hover.png",
+            "/images/stars_01.png",
+            "/images/stars_02.png"
+        ],
+        "url": "",
+        "status": "DONE"
+    },
+    {
+        "id": "T02",
+        "name": "Tons-Portfolio",
+        "type": "Portfolio",
+        "tools": [
+            "HTML",
+            "CSS",
+            "REACT",
+            "SASS"
+        ],
+        "images": [
+            "/images/portfolio_main.png",
+            "/images/portfolio_hover.png",
+            "/images/portfolio_01.png",
+            "/images/portfolio_02.png"
+        ],
+        "url": "",
+        "status": "IN-PROGRESS"
+    },
+    {
+        "id": "T03",
+        "name": "Delivery Hub",
+        "type": "E-commerce",
+        "tools": [
+            "HTML",
+            "CSS",
+            "JS",
+            "MongoDB",
+            "REACT",
+            "SASS"
+        ],
+        "images": [
+            "/images/deliveryhub_main.png",
+            "/images/deliveryhub_hover.png",
+            "/images/deliveryhub_01.png",
+            "/images/deliveryhub_02.png"
+        ],
+        "url": "",
+        "status": "PUBLISHED"
+    }
+]

@@ -1,0 +1,191 @@
+.nav-container {
+  width: 100%;
+  height: 11vh;
+  overflow: hidden;
+  background-color: #333333;
+  -webkit-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 0 1.5rem;
+  font-family: "Ubuntu", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: nav-fade-in 0.8s ease-in-out;
+          animation: nav-fade-in 0.8s ease-in-out;
+}
+
+.nav-container .logo-container .logo {
+  width: 6rem;
+}
+
+.nav-container .active-link {
+  background-color: #00b0ff;
+}
+
+.nav-container .active-link li {
+  color: #ffffff;
+}
+
+.nav-container .menu-container {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.1rem;
+  font-weight: 400;
+  -webkit-transform: translateX(500%);
+          transform: translateX(500%);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  opacity: 20%;
+  visibility: hidden;
+}
+
+.nav-container .menu-container .link {
+  width: 8rem;
+  padding: 0.5rem 0;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  color: #CACACA;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.nav-container .menu-container .link:nth-child(even) {
+  margin: 0 8rem;
+}
+
+.nav-container .menu-container .link:hover {
+  background-color: #00b0ff;
+}
+
+.nav-container .menu-container .link:hover li {
+  color: #ffffff;
+}
+
+.nav-container .display-menu {
+  opacity: 100%;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  font-size: 1.1rem;
+  visibility: visible;
+}
+
+.nav-container .hamburger-menu {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-container .hamburger-menu .line {
+  background-color: #c9c9c9;
+  width: 30px;
+  height: 0.1rem;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  position: absolute;
+}
+
+.nav-container .hamburger-menu .line:first-child {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.nav-container .hamburger-menu .line:nth-child(even) {
+  width: 25px;
+  left: 0;
+}
+
+.nav-container .hamburger-menu .line:last-child {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.nav-container .hamburger-change .line:first-child {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.nav-container .hamburger-change .line:nth-child(even) {
+  -webkit-transform: translate(100px);
+          transform: translate(100px);
+}
+
+.nav-container .hamburger-change .line:last-child {
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+@-webkit-keyframes nav-fade-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes nav-fade-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 923px) {
+  .nav-container .logo-container {
+    display: none;
+  }
+  .nav-container .menu-container {
+    font-size: 1rem;
+  }
+  .nav-container .menu-container .link {
+    width: 7rem;
+    padding: 0.5rem 0;
+  }
+  .nav-container .menu-container .link:nth-child(even) {
+    margin: 0 2rem;
+  }
+}
+/*# sourceMappingURL=Styles.css.map */

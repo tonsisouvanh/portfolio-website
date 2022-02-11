@@ -1,0 +1,11 @@
+@import '../../Variable';
+
+.project-detail-page-container{
+    width: 100%;
+    min-height: calc(100vh - #{$navbar-vh});
+    background-color: $black;
+    font-family: $ubuntu;
+    color: $gray;
+    @include flexCol(start, start);
+    padding: 3rem 20rem;
+}

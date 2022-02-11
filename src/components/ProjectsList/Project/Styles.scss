@@ -1,0 +1,110 @@
+@import "../../../Variable";
+
+.project-card-container {
+  position: relative;
+  width: 32rem;
+  height: 21rem;
+  overflow: hidden;
+  box-shadow: 10px 10px 16px -7px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 10px 10px 16px -7px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 10px 10px 16px -7px rgba(0, 0, 0, 0.5);
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: fill;
+    border: none;
+  }
+
+  &:hover {
+    .img {
+      visibility: visible;
+      transform: translateY(0);
+    }
+    .info-hover-container {
+      visibility: visible;
+      .more-btn {
+        transform: translateY(0);
+        opacity: 1;
+        transition: all 0.3s ease-in-out 0.3s;
+      }
+      .tool-container {
+        transition: all 0.3s ease-in-out 0.5s;
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+  .img {
+    visibility: hidden;
+    transform: translateY(-100%);
+    transition: all 0.4s ease-in-out;
+
+  }
+  .info-hover-container {
+    visibility: hidden;
+    .more-btn {
+      transform: translateY(-30%);
+      opacity: 0;
+    }
+    .tool-container {
+      transform: translateY(-30%);
+      opacity: 0;
+    }
+  }
+
+  .info-hover-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    isolation: isolate;
+    @include flexRow(center, center);
+    transition: all 0.4s ease-in-out;
+
+    @include flexCol(center, center);
+    .more-btn {
+      width: 94px;
+      height: 30px;
+      border: none;
+      border-radius: 24px;
+      font-family: $ubuntu;
+      font-size: 1rem;
+      color: $white;
+      background-color: $blue;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      // transition: all 0.2s ease-in-out 0.3s;
+    }
+    .tool-container {
+      @include flexRow(center, center);
+      flex-wrap: wrap;
+      // transition: all 0.2s ease-in-out 0.5s;
+
+      p {
+        background-color: #818181;
+        border-radius: 2px;
+        font-size: 0.8rem;
+        color: $white;
+        text-align: center;
+        padding: 0.2rem 0.3rem;
+        margin: 0 0.6rem 0.6rem 0;
+        // border: 1px solid rgb(90, 90, 90);
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(35, 35, 35);
+      opacity: 0.6;
+      z-index: -1;
+    }
+  }
+}

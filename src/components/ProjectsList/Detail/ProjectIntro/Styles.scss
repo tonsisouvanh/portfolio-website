@@ -1,0 +1,66 @@
+@import "../../../../Variable";
+
+.product-intro-container {
+  width: 100%;
+  margin-bottom: 8em;
+  .product-name-container {
+    .name {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+    .description {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .visit-btn {
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      border: none;
+      padding: 10px 44px;
+      font-size: 36px;
+      width: 159.35px;
+      height: 40px;
+      position: relative;
+      cursor: pointer;
+      margin-bottom: 1rem;
+      &::before {
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+        transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        content: "";
+        width: 159.35px;
+        height: 40px;
+        background: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      &.rounded {
+        border-radius: 50px;
+        & .visit-text{
+          color: $blue;
+          mix-blend-mode: difference;
+          text-decoration: none;
+          font-size: 0.8rem;
+          @include flexRow(center, center);
+          font-weight: 500;
+          font-family: $ubuntu;
+        }
+
+        &::before {
+          border-radius: 50px;
+          width: 25%;
+          background: $red;
+        }
+        &:hover {
+          &::before {
+            background: $blue;
+            width: 100%;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

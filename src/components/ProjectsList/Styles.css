@@ -1,0 +1,32 @@
+.project-list-container {
+  width: 100%;
+  min-height: calc(100vh - 11vh);
+  background-color: #2F2F2F;
+  font-family: "Ubuntu", sans-serif;
+  color: #CACACA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 5rem;
+}
+
+.project-list-container h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.project-list-container p {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+/*# sourceMappingURL=Styles.css.map */
