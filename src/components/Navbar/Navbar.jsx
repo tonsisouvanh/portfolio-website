@@ -14,7 +14,7 @@ function Navbar() {
       path: "/projects",
     },
     {
-      text: "Contact",
+      text: "Contacttttaiousdhf",
       path: "b",
     },
   ];
