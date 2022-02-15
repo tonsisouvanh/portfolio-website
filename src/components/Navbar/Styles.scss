@@ -40,16 +40,19 @@
       border: none;
       text-align: center;
       border-radius: 5px;
-      color: $gray;
+      // color: #c9c9c9;
+      color: #d10808;
+
       text-decoration: none;
       transition: all 0.3s ease-out;
+
       &:nth-child(even) {
         margin: 0 8rem;
       }
       &:hover {
         background-color: $blue;
         li {
-          color: $white;
+          color: #ffffff;
         }
       }
     }

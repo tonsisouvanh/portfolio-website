@@ -6,7 +6,7 @@ import logo from "../../images/tons-logo.png";
 function Navbar() {
   const menuLinks = [
     {
-      text: "Home",
+      text: "Homeeeeeee",
       path: "/",
     },
     {
