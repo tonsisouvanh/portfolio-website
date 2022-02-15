@@ -10,7 +10,7 @@ function Navbar() {
       path: "/",
     },
     {
-      text: "My Projects",
+      text: "My Projectsssssss",
       path: "/projects",
     },
     {
