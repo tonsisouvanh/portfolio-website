@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import topvt from "../../images/top_vector.svg";
 import midpvt from "../../images/mid_vector.svg";
 import btmvt from "../../images/bottom_vector.svg";

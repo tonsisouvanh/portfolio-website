@@ -1,24 +1,11 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Styles.css";
 import { Link } from "react-router-dom";
 import { Status } from "./Status";
-import { useParams } from "react-router";
+// import { useParams } from "react-router";
 
 function ProjectCard({ projects }) {
-  const [color, setColor] = useState("red");
-  const handleBackgroundColor = () => {
-    if (1 === 1) {
-      setColor("#00b0ff");
-    }
-    if (1 === 2) {
-      setColor("green");
-    }
-  };
-
-  useEffect(() => {
-    handleBackgroundColor();
-  }, []);
 
   return (
     <>

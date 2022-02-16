@@ -4,7 +4,7 @@ import Slider from "../Slider/Slider";
 import "./Styles.css";
 
 const ProjectIntro = ({ data }) => {
-  const [projects, setProjects] = useState(data);
+  const [projects] = useState(data);
   let { id } = useParams();
   return (
     <>
@@ -17,7 +17,7 @@ const ProjectIntro = ({ data }) => {
                 <h1 className="name">{project.name}</h1>
                 <p className="description"> Description about the project</p>
                 <button className="visit-btn rounded">
-                  <a className="visit-text" href="">
+                  <a className="visit-text" href="/#">
                     VISIT NOW
                   </a>
                 </button>

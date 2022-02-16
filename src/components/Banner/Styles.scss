@@ -17,7 +17,7 @@
   overflow: hidden;
   .left-col-container {
     position: relative;
-    @include flexRow(start, center);
+    @include flexRow(flex-start, center);
     .vector-img {
       position: absolute;
       width: 500px;

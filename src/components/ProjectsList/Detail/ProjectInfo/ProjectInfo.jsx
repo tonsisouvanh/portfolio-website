@@ -1,5 +1,4 @@
 import React from "react";
-import aboutImg from "../../../../images/about_undraw.svg";
 import technicalImg from "../../../../images/technical_undraw.svg";
 import "./Styles.css";
 import TeamWorkSvg from "./team_work/TeamWorkSvg";
@@ -37,7 +36,7 @@ const ProjectInfo = () => {
             </ul>
           </div>
           <div className="image-container">
-            <img src={technicalImg} alt="image" />
+            <img src={technicalImg} alt="img" />
           </div>
         </div>
 

@@ -8,7 +8,6 @@ import ProjectDetailPage from "./pages/ProjectDetailPage";
 
 // Data
 import data from "./data/projects.json";
-import TestPage from "./pages/TestPage";
 
 function App() {
   return (
@@ -22,9 +21,6 @@ function App() {
           </Route>
           <Route exact path="/projects/:id">
             <ProjectDetailPage data={data} />
-          </Route>
-          <Route exact path="/test">
-            <TestPage />
           </Route>
         </Switch>
       </Router>

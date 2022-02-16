@@ -6,6 +6,6 @@
     background-color: $black;
     font-family: $ubuntu;
     color: $gray;
-    @include flexCol(start, start);
+    @include flexCol(flex-start, flex-start);
     padding: 3rem 20rem;
 }

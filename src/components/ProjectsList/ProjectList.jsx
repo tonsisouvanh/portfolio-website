@@ -4,7 +4,7 @@ import ProjectCard from "./Project/ProjectCard";
 import { Grid } from "../../style/GridStyle";
 
 function ProjectList({ data }) {
-  const [projects, setProject] = useState(data);
+  const [projects] = useState(data);
   return (
     <>
       <div className="project-list-container">
