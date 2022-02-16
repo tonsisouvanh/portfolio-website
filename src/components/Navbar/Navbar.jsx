@@ -21,21 +21,19 @@ function Navbar() {
   const [click, setClick] = useState(false);
   return (
     <>
-      <nav className="nav-container">
-        <div className="logo-container">
+      <nav className="nav__container">
+        <div className="logo__container">
           <img className="logo" src={logo} alt="logo"></img>
         </div>
 
-        <ul
-          className={click ? "menu-container display-menu" : "menu-container"}
-        >
+        <ul className="menu__container">
           {menuLinks.map((menu, index) => (
             <NavLink
               key={index}
               exact
               to={menu.path}
               className="link"
-              activeClassName="active-link"
+              activeClassName="active__link"
             >
               <li>{menu.text}</li>
             </NavLink>
@@ -45,7 +43,7 @@ function Navbar() {
         <div
           onClick={() => setClick(!click)}
           className={
-            click ? "hamburger-menu hamburger-change" : "hamburger-menu"
+            click ? "hamburger__menu hamburger__change" : "hamburger__menu"
           }
         >
           <div className="line"></div>

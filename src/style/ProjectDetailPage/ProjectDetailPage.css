@@ -11,11 +11,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: flex-start;
-      -ms-flex-pack: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: flex-start;
-      -ms-flex-align: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
           align-items: flex-start;
   padding: 3rem 20rem;
 }
