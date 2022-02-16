@@ -9,6 +9,7 @@
   //   right: 0;
   //   top: 50%;
   // }
+  // padding: 0 5rem;
   background-color: $black;
   height: calc(100vh - #{$navbar-vh});
   display: grid;
@@ -97,7 +98,6 @@
           @keyframes head1-fade {
             100% {
               opacity: 1;
-
               transform: translateY(0);
             }
           }

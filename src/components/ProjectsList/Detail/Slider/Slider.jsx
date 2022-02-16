@@ -7,8 +7,8 @@ const Slider = ({ images }) => {
   return (
     <>
       <AwesomeSlider className="slide-container">
-        {images.map((i) => {
-          return <div className="image" data-src={i} />;
+        {images.map((i,index) => {
+          return <div key={index} className="image" data-src={i} />;
         })}
       </AwesomeSlider>
     </>

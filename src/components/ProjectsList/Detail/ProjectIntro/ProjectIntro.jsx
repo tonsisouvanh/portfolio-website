@@ -13,7 +13,7 @@ const ProjectIntro = ({ data }) => {
           .filter((p) => p.id === id)
           .map((project) => {
             return (
-              <div className="product-name-container">
+              <div key={project.id} className="product-name-container">
                 <h1 className="name">{project.name}</h1>
                 <p className="description"> Description about the project</p>
                 <button className="visit-btn rounded">

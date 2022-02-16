@@ -11,7 +11,7 @@ function ProjectCard({ projects }) {
     <>
       {projects.map((p) => {
         return (
-          <div className="project-card-container">
+          <div key={p.id} className="project-card-container">
             <img className="main-img" src={p.images[0]} alt="image" />
 
             <img className="img" src={p.images[1]} alt="" />

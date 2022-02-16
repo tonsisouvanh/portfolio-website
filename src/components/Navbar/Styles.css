@@ -43,10 +43,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.2rem;
+  font-size: 0.2rem;
   font-weight: 400;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -webkit-transform: translateX(500%);
+          transform: translateX(500%);
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .nav__container .menu__container .link {
@@ -73,12 +75,10 @@
   color: #ffffff;
 }
 
-.nav__container .display__menu {
-  opacity: 100%;
+.nav__container #display__menu {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  font-size: 1.1rem;
-  visibility: visible;
+  font-size: 1.2rem;
 }
 
 .nav__container .hamburger__menu {

@@ -26,7 +26,7 @@ function Navbar() {
           <img className="logo" src={logo} alt="logo"></img>
         </div>
 
-        <ul className="menu__container">
+        <ul id={click? "display__menu":""} className="menu__container">
           {menuLinks.map((menu, index) => (
             <NavLink
               key={index}
