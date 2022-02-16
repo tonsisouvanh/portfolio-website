@@ -6,20 +6,19 @@ import logo from "../../images/tons-logo.png";
 function Navbar() {
   const menuLinks = [
     {
-      text: "Homeeeeeee",
+      text: "Home",
       path: "/",
     },
     {
-      text: "My Projectsssssss",
+      text: "My Project",
       path: "/projects",
     },
     {
-      text: "Contacttttaiousdhf",
+      text: "Contact",
       path: "b",
     },
   ];
   const [click, setClick] = useState(false);
-
   return (
     <>
       <nav className="nav-container">
