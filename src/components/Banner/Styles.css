@@ -1,6 +1,6 @@
 .banner-container {
   background-color: #2F2F2F;
-  height: calc(100vh - 11vh);
+  min-height: calc(100vh - 8vh);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
