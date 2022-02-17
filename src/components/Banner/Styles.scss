@@ -11,7 +11,7 @@
   // }
   // padding: 0 5rem;
   background-color: $black;
-  height: calc(100vh - #{$navbar-vh});
+  min-height: calc(100vh - 8vh);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-flow: column;

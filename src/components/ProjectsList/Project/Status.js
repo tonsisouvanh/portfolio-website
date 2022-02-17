@@ -7,14 +7,15 @@ export const Status = styled.p`
       : props.status === "DONE"
       ? "#FFC70E"
       : "#1DD05D"};
+
   position: absolute;
   z-index: 1;
-  top: 27px;
-  right: -43px;
+  top: 33px;
+  right: -42px;
   transform: rotate(42deg);
   font-weight: bold;
   width: 12rem;
-  padding: 0.5rem 0;
+  padding: 0.4rem !important;
   text-align: center;
   color: #ffffff;
   font-size: 0.9rem;
