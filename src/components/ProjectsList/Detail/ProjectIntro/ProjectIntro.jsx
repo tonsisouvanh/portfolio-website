@@ -17,7 +17,12 @@ const ProjectIntro = ({ data }) => {
                 <h1 className="name">{project.name}</h1>
                 <p className="description"> Description about the project</p>
                 <button className="visit-btn rounded">
-                  <a className="visit-text" href="/#">
+                  <a
+                    className="visit-text"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={project.url}
+                  >
                     VISIT NOW
                   </a>
                 </button>

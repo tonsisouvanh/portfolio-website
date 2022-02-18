@@ -24,21 +24,6 @@ function Projects({ data }) {
               />
             );
           })}
-          {data.map((d) => {
-            return (
-              <ProjectCard
-                key={d.id}
-                id={d.id}
-                imagesA={d.images[0]}
-                imagesB={d.images[1]}
-                status={d.status}
-                tools={d.tools}
-              />
-            );
-          })}
-          
-
-
           {/* <div>1</div>
           <div>2</div>
           <div>3</div>
