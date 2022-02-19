@@ -16,7 +16,7 @@ const ProjectInfo = () => {
           </div>
           <div className="image-container">
             {/* <img src={aboutImg} alt="image" /> */}
-            {/* <TeamWorkSvg className="image__active"/> */}
+            <TeamWorkSvg className="image__active"/>
           </div>
         </div>
 
