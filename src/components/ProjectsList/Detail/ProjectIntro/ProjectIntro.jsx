@@ -16,11 +16,24 @@ const ProjectIntro = ({ data }) => {
               <div key={project.id} className="product-name-container">
                 <h1 className="name">{project.name}</h1>
                 <p className="description"> Description about the project</p>
-                <button className="visit-btn rounded">
-                  <a className="visit-text" href="/#">
+                {/* <a
+                  className="visit-text"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={project.url}
+                >
+                  <button className="button-29">VISIT NOW</button>
+                </a> */}
+                <div className="text-box">
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-white btn-animate"
+                  >
                     VISIT NOW
                   </a>
-                </button>
+                </div>
 
                 <Slider images={project.images}></Slider>
               </div>
