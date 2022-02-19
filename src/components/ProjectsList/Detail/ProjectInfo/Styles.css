@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+.project-info-container .image__active {
+  display: none;
+}
+
 .project-info-container h1 {
   font-size: 1.8rem;
   background: #fdfdfd;

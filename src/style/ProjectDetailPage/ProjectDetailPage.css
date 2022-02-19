@@ -19,4 +19,16 @@
           align-items: flex-start;
   padding: 3rem 20rem;
 }
+
+@media screen and (max-width: 375px) {
+  .project-detail-page-container {
+    padding: 3rem 1rem;
+  }
+}
+
+@media screen and (max-width: 1465px) {
+  .project-detail-page-container {
+    padding: 3rem 1rem;
+  }
+}
 /*# sourceMappingURL=ProjectDetailPage.css.map */

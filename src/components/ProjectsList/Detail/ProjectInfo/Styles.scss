@@ -2,6 +2,9 @@
 
 .project-info-container {
   width: 100%;
+  .image__active{
+    display: none;
+  }
   h1 {
     font-size: 1.8rem;
     background: #fdfdfd;
